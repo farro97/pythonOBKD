@@ -10,7 +10,7 @@
             "request": "launch",
             "module": "flask",
             "env": {
-                "FLASK_APP": "FirstWebApi.py",
+                "FLASK_APP": "stock_check2.py",
                 "FLASK_ENV": "development",
                 "FLASK_DEBUG": "0"
             },

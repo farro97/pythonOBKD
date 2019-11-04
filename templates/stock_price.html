@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>US Stock</title>
+
+</head>
+{% if tCode %}
+<style>
+    body {
+        text-align: center;
+        padding-top: 30px;
+    }
+    #stock {
+        background-color: rgb(168, 91, 91);
+        padding:10px;
+        margin:0;
+    }
+</style>
+<body>
+    <div id="stock">
+    <h2><u>Latest US Stock Price</u></h2>
+    <h4>US Stock Ticker ({{ tCode }})</h4>
+    <h4>Closing Stock Price ({{ sPrice }})</h4>
+    <h4>Closing Volume ({{ cVolume }})</h4>
+    <h4>Date and time ({{ dTime }})</h4>
+    <a href="stock">back to stock</a>
+</div>
+</body>
+{% else %}
+
+<body>
+    <h1>No price data</h1>
+    <a href="stock">back to stock </a>
+</body>
+{% endif %}
+
+</html>
