@@ -10,7 +10,7 @@
             "request": "launch",
             "module": "flask",
             "env": {
-                "FLASK_APP": "stock_check2.py",
+                "FLASK_APP": "fidor_bank.py",
                 "FLASK_ENV": "development",
                 "FLASK_DEBUG": "0"
             },
