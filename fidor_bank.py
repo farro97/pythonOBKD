@@ -6,7 +6,7 @@ import json
 
 app = Flask(__name__)
 app.config['SESSION_TYPE'] = 'memcached'
-app.config['SECRET_KEY'] = 'e850a7ca1737b08d21080b0e1b825689'
+app.config['SECRET_KEY'] = 'bcda4021155052d1d9ce82375ce201e1'
 
 client_id = "b332054ba4e97102"
 client_secret = "bcda4021155052d1d9ce82375ce201e1"
