@@ -2,6 +2,23 @@ from flask import Flask, render_template, redirect, url_for, request
 import requests
 import json
 
+
+
+import requests
+
+url = "https://financialtimesmikilior1v1.p.rapidapi.com/getAspectsList"
+
+payload = ""
+headers = {
+    'x-rapidapi-host': "FinancialTimesmikilior1V1.p.rapidapi.com",
+    'x-rapidapi-key': "9ef0f41046msh0337a9f0ca5734dp12a2d8jsnbd16d28c80e5",
+    'content-type': "application/x-www-form-urlencoded"
+    }
+
+response = requests.request("POST", url, data=payload, headers=headers)
+
+print(response.text)
+
 app = Flask(__name__)
 @app.route('/stock', methods=['GET'])
 def stock():
